@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            font-family: '標楷體';
+        }
+
+        .wrap{
+            margin: auto;
+            display: flex;
+        }
+        .content{
+            width: 900px;
+            height: 900px;
+            margin: auto;
+            border: 1px solid black;
+            padding: 5%;
+        }
+        .row{
+            width: 100%;
+            display: flex;
+            height: 11%;
+            box-sizing: border-box;
+            margin: auto;
+            padding-left: 10%;
+        }
+        .col {
+            width: 11%;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        .lastRight{
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin: -45%;
+            border: 1px solid black;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+        
+        .col div {
+            border-radius: 50%;
+            margin: -25%;
+            width: 50%;
+            height: 50%;
+            border: 1px solid black;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+        .center {
+            display: flex;
+            justify-content: space-around;
+            padding-right: 10%;
+            align-items: center;
+            font-size: 3rem;
+        }
+        .red {
+            color: red;
+        }
+        .last {
+            color: red;
+            align-items: end;
+            justify-content: start;
+            display: flex;
+        }
+        .right {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: -50%;
+            margin-top: 135%;
+            font-size: 30px;
+        }
+        .title {
+            -webkit-writing-mode: vertical-lr;
+            writing-mode: vertical-lr;
+            display: flex;
+            font-size: 2rem;
+            padding: 20px;
+        }
+        .shi {
+            position: relative;
+        }
+        .shi::before{
+            position: absolute;
+            content: "";
+            left: -18%;
+            bottom: -16%;
+            width: 232px;
+            border-top: 1px solid;
+            border-color: inherit;
+            transform:rotate(48deg);
+        }
+        .shiright{
+            position: relative;
+        }
+        .shiright::before{
+            position: absolute;
+            content: "";
+            right: 85%;
+            bottom: -15%;
+            width: 232px;
+            border-top: 1px solid;
+            border-color: inherit;
+            transform:rotate(-48deg);
+        }
+        .redshi {
+            position: relative;
+        }
+        .redshi::before{
+            position: absolute;
+            content: "";
+            left: -48%;
+            bottom: 10%;
+            width: 243px;
+            border-top: 1px solid;
+            border-color: inherit;
+            transform:rotate(48deg);
+        }
+        .redshiright {
+            position: relative;
+        }
+        .redshiright::before{
+            position: absolute;
+            content: "";
+            right: -48%;
+            bottom: 10%;
+            width: 241px;
+            border-top: 1px solid;
+            border-color: inherit;
+            transform:rotate(-48deg);
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="title">棋盤裡，車無輪，馬無韁，叫聲將軍提防提防</div>
+        <div class="content">
+            <ul class="row">
+                <li class="col">
+                    <div>車</div>
+                </li>
+                <li class="col">
+                    <div>馬</div>
+                </li>
+                <li class="col">
+                    <div>象</div>
+                </li>
+                <li class="col shi">
+                    <div>士</div>
+                </li>
+                <li class="col">
+                    <div>將</div>
+                </li>
+                <li class="col shiright">
+                    <div>士</div>
+                </li>
+                <li class="col">
+                    <div>象</div>
+                </li>
+                <li class="col">
+                    <div>馬</div>
+                </li>
+                <li>
+                    <div class="lastRight">車</div>
+                </li>
+            </ul>
+            <ul class="row">
+                <li class="col"></li>
+                <li class="col"></li>
+                <li class="col"></li>
+                <li class="col"></li>
+                <li class="col"></li>
+                <li class="col"></li>
+                <li class="col"></li>
+                <li class="col"></li>
+            </ul>
+            <ul class="row">
+                <li class="col"></li>
+                <li class="col">
+                    <div>包</div>
+                </li>
+                <li class="col"></li>
+                <li class="col"></li>
+                <li class="col"></li>
+                <li class="col"></li>
+                <li class="col"></li>
+                <li class="col">
+                    <div>包</div>
+                </li>
+            </ul>
+            <ul class="row">
+                <li class="col">
+                    <div>卒</div>
+                </li>
+                <li class="col"></li>
+                <li class="col">
+                    <div>卒</div>
+                </li>
+                <li class="col"></li>
+                <li class="col">
+                    <div>卒</div>
+                </li>
+                <li class="col"></li>
+                <li class="col">
+                    <div>卒</div>
+                </li>
+                <li class="col"></li>
+                <li>
+                    <div class="lastRight">卒</div>
+                </li>
+            </ul>
+            <ul class="row center">
+                <li >楚河</li>
+                <li >漢界</li>
+            </ul>
+            <ul class="row">
+                <li class="col"></li>
+                <li class="col"></li>
+                <li class="col"></li>
+                <li class="col"></li>
+                <li class="col"></li>
+                <li class="col"></li>
+                <li class="col"></li>
+                <li class="col"></li>
+            </ul>
+            <ul class="row">
+                <li class="col red">
+                    <div>兵</div>
+                </li>
+                <li class="col"></li>
+                <li class="col red">
+                    <div>兵</div>
+                </li>
+                <li class="col"></li>
+                <li class="col red">
+                    <div>兵</div>
+                </li>
+                <li class="col"></li>
+                <li class="col red">
+                    <div>兵</div>
+                </li>
+                <li class="col"></li>
+                <li>
+                    <div class="lastRight red">兵</div>
+                </li>
+            </ul>
+            <ul class="row">
+                <li class="col"></li>
+                <li class="col red">
+                    <div>炮</div>
+                </li>
+                <li class="col"></li>
+                <li class="col redshi"></li>
+                <li class="col redshiright"></li>
+                <li class="col"></li>
+                <li class="col"></li>
+                <li class="col red">
+                    <div>炮</div>
+                </li>
+            </ul>
+            <ul class="row">
+                <li class="col last">
+                    <div>俥</div>
+                </li>
+                <li class="col last">
+                    <div>傌</div>
+                </li>
+                <li class="col last">
+                    <div>相</div>
+                </li>
+                <li class="col last">
+                    <div>仕</div>
+                </li>
+                <li class="col last">
+                    <div>帥</div>
+                </li>
+                <li class="col last">
+                    <div>仕</div>
+                </li>
+                <li class="col last">
+                    <div>相</div>
+                </li>
+                <li class="col last">
+                    <div>傌</div>
+                </li>
+                <li>
+                    <div class="last right">俥</div>
+                </li>
+            </ul>
+        </div>
+        <div class="title">圖畫裡，龍不吟，虎不嘯，小小書僮可笑可笑</div>
+    </div>
+</body>
+</html>
